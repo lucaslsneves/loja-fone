@@ -10,6 +10,7 @@
   font-size: 40px;
   font-family: Arial, "Roboto", sans-serif;
   text-transform: uppercase;
+  cursor:pointer;
 }
 
 .header-store > .navigation {

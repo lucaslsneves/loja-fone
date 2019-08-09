@@ -1,9 +1,17 @@
 .description-product{
     color:#fff;
     font-family:'Roboto',sans-serif;
-   
+    
     
    
+}
+
+.description-product > .heart{
+        position: absolute;
+        transform: translateX(-100% );
+        left:-47px;
+        top:5px;
+        cursor:pointer;
 }
 
 .description-product > .title{
@@ -19,6 +27,7 @@
 }
 .description-product > .item.-star{
     margin-bottom:10px;
+    cursor: pointer;
 }
 .description-product > .item.-star+ .item{
     margin-left:7px;
