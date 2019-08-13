@@ -12,6 +12,14 @@
         left:-47px;
         top:5px;
         cursor:pointer;
+        
+}
+
+.description-product .icon{
+    transform: 100ms;
+}
+.description-product .icon:hover{
+    transform: scale(1.2);
 }
 
 .description-product > .title{
@@ -29,6 +37,7 @@
     margin-bottom:10px;
     cursor: pointer;
 }
+
 .description-product > .item.-star+ .item{
     margin-left:7px;
 }

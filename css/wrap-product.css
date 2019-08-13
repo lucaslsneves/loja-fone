@@ -11,10 +11,3 @@
     transform:translateY(calc(100% + 98px));
 }
 
-.wrap-product > .heart{
-    position: absolute;
-    transform: translateX(-100% );
-    left:-47px;
-    top:5px;
-    cursor:pointer;
-}

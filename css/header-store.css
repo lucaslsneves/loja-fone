@@ -30,17 +30,43 @@
       width: 358px;
       margin-right: 65px;
       outline: none;
+      vertical-align: bottom;
 }
 .header-store input[type="search"]::placeholder { /* Firefox, Chrome, Opera */ 
   color: #fff; 
 } 
 
 .header-store .action {
+  padding-bottom:10px;
+  display: inline-block;
   margin-right: 60px;
   text-decoration: none;
   color: inherit;
+  position: relative;
+ 
+}
+.header-store .action:hover{
+  
 }
 
 .header-store .action.-last {
   margin-right: 0;
+}
+
+.header-store .action:after{
+  content:'';
+  position: absolute; /*O position absolute faz com que o elemento
+  after,que por padrão é display inline,seja computado como display Block!
+  Assim é possivel setar altura e largura*/
+  bottom:0;
+  left:0; 
+  height: 1px;
+  width:100%;
+  background-color:white;
+  transform:scaleX(0);
+  transition:transform 200ms linear;
+  transform-origin: center left;
+}
+.header-store .action:hover:after{
+  transform:scaleX(1);
 }
