@@ -5,7 +5,7 @@
 
 input {
     -webkit-appearance: none;
-    -webkit-border-radius:0px
+     border-radius:0px;
 }
 .input-search .icon{
     display: none;
@@ -19,7 +19,7 @@ input {
   font-size: 20px;
   padding: 8px;
   width: 358px;
-  margin-right: 65px;
+  margin-right: 65px ;
   outline: none;
   vertical-align: bottom;
 }
@@ -64,8 +64,11 @@ input {
  .input-search.-active > .icon{
      display: none;
  }
+
+
+}
 @media(max-width:480px){
-    .input-search > .content{
-        width:70vw;
-    }
+  .input-search > .content{
+      width:70vw;
+  }
 }

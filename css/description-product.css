@@ -89,7 +89,7 @@
     text-decoration: none;
 }
 
-@media(max-width:1280px){
+@media(max-width:1350px){
     .description-product{
         width:50%;
        margin:0 auto;
