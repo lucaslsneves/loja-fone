@@ -1,8 +1,10 @@
 .wrap-product{
+    
     width: 524px;
    display: inline-block;
     vertical-align: middle;
     position: relative;
+    
 }
 
 .wrap-product > .buttons{
@@ -10,4 +12,42 @@
     bottom:0;
     transform:translateY(calc(100% + 98px));
 }
+
+@media(max-width:1280px){
+    .wrap-product{
+        width:100%;
+    }
+    .wrap-product > .buttons{
+        position: static;
+        width:100%;
+        margin:0 auto;
+        transform: none;
+        margin-top:15px;
+        text-align: center;
+    }
+    
+}
+@media(max-width:580px){
+    
+    .wrap-product > .buttons{
+        
+        transition: none;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    
+    .wrap-product > .buttons a,
+    .wrap-product > .buttons button{
+        width:90%;
+    }
+    .wrap-product > .buttons a{
+        margin-bottom:10px;
+    }
+
+    .wrap-product > .buttons button{
+        margin-right:0; 
+    }
+}
+
 
